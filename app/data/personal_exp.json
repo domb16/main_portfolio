@@ -1,0 +1,94 @@
+{
+    "EXPERIENCE": [
+        {
+            "role": "Independent Proprietary Trader & Quantitative Researcher",
+            "company": "Remote",
+            "period": "2020 - 2024",
+            "desc": "Engineered a high-performance quantitative trading ecosystem featuring NumPy-vectorized screening and AsyncIO data pipelines. Implemented hard-coded risk 'kill-switches' and a compliance-first OMS to enforce strict capital discipline and audit-ready execution."
+        },
+        {
+            "role": "Founder & CTO",
+            "company": "Collective Hub Holdings (Venture Concluded)",
+            "period": "2023 - 2025",
+            "desc": "Directed technical strategy and corporate architecture using React Typescript and Python, building a secure Docker/AWS ecosystem with strict data segregation. Executed a disciplined, solvent wind-down of operations to preserve capital upon invalidating the core business thesis."
+        },
+        {
+            "role": "Core Engineer (Python + React)",
+            "company": "Tealstreet Ltd",
+            "period": "2022 - 2023",
+            "desc": "Engineered resilient, low-latency WebSocket connectors with optimized heartbeat logic to prevent 'stuck orders' during volatility. Refactored routing algorithms to minimize slippage and ensure precise timestamp fidelity for best execution. Actively managed company partnerships and engineering issues with partners."
+        },
+        {
+            "role": ".NET/Python Engineer",
+            "company": "Octopus Investments",
+            "period": "2018 - 2021",
+            "desc": "Designed a zero-downtime migration system (Azure Functions) for critical financial data, ensuring 100% integrity. Replaced manual SQL reporting with an auditable, real-time compliance dashboard. Pioneered the prototype architecture for the digitalisation of Will writing, collaborating with a cross-functional team to translate complex estate planning logic into automated software workflows."
+        }
+    ],
+    "PROJECTS": [
+        {
+            "title": "SpitfireTraders Infrastructure",
+            "tag": "Infrastructure",
+            "tech": [
+                "Python",
+                "APIs",
+                "Cloud Architecture",
+                "Cron jobs",
+                "Automation"
+            ],
+            "desc": "An automated, interactable screener, with cron jobs to process and output quantitative data based on 550 financial market tickers processed in only a few seconds. Vectorised NumPy manipulation and AsyncIO execution to handle data crunching with non-blocking processes.",
+            "stats": "99.9% Uptime",
+            "deployment": "AWS ECS (Fargate)",
+            "architecture": "Async Event-Driven Worker System",
+            "github_link": "#",
+            "live_demo_uri": "#"
+        },
+        {
+            "title": "Machine Learning R&D",
+            "tag": "AI & ML",
+            "tech": [
+                "Python",
+                "PyTorch",
+                "TensorFlow",
+                "AI",
+                "Financial Model design"
+            ],
+            "desc": "Specialised machine learning algorithm to explore financial market data for quantitative outcome.",
+            "stats": "10yr+ processed in minutes",
+            "deployment": "Local deployment / AWS",
+            "architecture": "Offline Training Pipeline",
+            "github_link": "#",
+            "live_demo_uri": "#"
+        },
+        {
+            "title": "Quantitative Platform",
+            "tag": "Quantitative Finance",
+            "tech": [
+                "Pandas",
+                "NumPy",
+                "Statistical Analysis"
+            ],
+            "desc": "Market data aggregator normalizing feeds from selected stock market assets, backtesting various strategies and applying different risk management techniques to optimise solid long term investment returns.",
+            "stats": "<1m Processing",
+            "deployment": "Local VPS deployment",
+            "architecture": "Pub/Sub WebSocket Gateway",
+            "github_link": "#",
+            "live_demo_uri": "#"
+        },
+        {
+            "title": "Reconciliation API",
+            "tag": "Compliance",
+            "tech": [
+                "C# .NET",
+                "Azure Functions",
+                "Entity Framework"
+            ],
+            "desc": "Multiple-tenant serverless architecture to handle the migration of systems and reconciliation .",
+            "stats": "Multi-tenant System Migration",
+            "deployment": "Azure Functions (Serverless)",
+            "architecture": "Event-Triggered Microservices",
+            "github_link": "#",
+            "live_demo_uri": "#"
+        }
+    ]
+}
