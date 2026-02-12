@@ -1,94 +1,95 @@
 {
     "EXPERIENCE": [
         {
-            "role": "Independent Proprietary Trader & Quantitative Researcher",
-            "company": "Remote",
+            "role": "Independent Quant Researcher",
+            "company": "Proprietary Trading Desk",
             "period": "2020 - 2024",
-            "desc": "Engineered a high-performance quantitative trading ecosystem featuring NumPy-vectorized screening and AsyncIO data pipelines. Implemented hard-coded risk 'kill-switches' and a compliance-first OMS to enforce strict capital discipline and audit-ready execution."
+            "desc": "Captured consistent market alpha by designing a proprietary trading strategy and the high-performance infrastructure to run it. Optimized the core screening loop from 24s to <4s via concurrency and vectorisation (AsyncIO + Semaphore + NumPy), enabling the system to give accurate data without wassting precious seconds."
         },
         {
             "role": "Founder & CTO",
-            "company": "Collective Hub Holdings (Venture Concluded)",
+            "company": "Collective Hub Holdings",
             "period": "2023 - 2025",
-            "desc": "Directed technical strategy and corporate architecture using React Typescript and Python, building a secure Docker/AWS ecosystem with strict data segregation. Executed a disciplined, solvent wind-down of operations to preserve capital upon invalidating the core business thesis."
+            "desc": "Bootstrapped a production-ready React/Python platform to Beta as a solo engineer in under 12 months, effectively saving ~$150k in development overhead. Preserved ~42% of residual capital by executing a disciplined, solvent wind-down immediately upon invalidating the business thesis."
         },
         {
             "role": "Core Engineer (Python + React)",
             "company": "Tealstreet Ltd",
             "period": "2022 - 2023",
-            "desc": "Engineered resilient, low-latency WebSocket connectors with optimized heartbeat logic to prevent 'stuck orders' during volatility. Refactored routing algorithms to minimize slippage and ensure precise timestamp fidelity for best execution. Actively managed company partnerships and engineering issues with partners."
+            "desc": "Architected a unified 'Translation Layer' to normalize disparate exchange protocols into a single internal schema. Diagnosed critical vendor-side API gaps (missing endpoints/data) and liaised directly with partner engineering teams to implement protocol-level workarounds, ensuring 100% data continuity."
         },
         {
-            "role": ".NET/Python Engineer",
+            "role": "Software Engineer (.NET/Python)",
             "company": "Octopus Investments",
             "period": "2018 - 2021",
-            "desc": "Designed a zero-downtime migration system (Azure Functions) for critical financial data, ensuring 100% integrity. Replaced manual SQL reporting with an auditable, real-time compliance dashboard. Pioneered the prototype architecture for the digitalisation of Will writing, collaborating with a cross-functional team to translate complex estate planning logic into automated software workflows."
+            "desc": "Mitigated data-loss liability to 0% during a critical legacy-to-cloud transition. Accelerated audit readiness from 7 days to instant availability via automated dashboards, and digitized complex legal workflows to unlock a digitalised Will writing stream previously constrained by manual processing capacity."
         }
     ],
-    "PROJECTS": [
-        {
-            "title": "SpitfireTraders Infrastructure",
-            "tag": "Infrastructure",
-            "tech": [
-                "Python",
-                "APIs",
-                "Cloud Architecture",
-                "Cron jobs",
-                "Automation"
-            ],
-            "desc": "An automated, interactable screener, with cron jobs to process and output quantitative data based on 550 financial market tickers processed in only a few seconds. Vectorised NumPy manipulation and AsyncIO execution to handle data crunching with non-blocking processes.",
-            "stats": "99.9% Uptime",
-            "deployment": "AWS ECS (Fargate)",
-            "architecture": "Async Event-Driven Worker System",
-            "github_link": "#",
-            "live_demo_uri": "#"
-        },
-        {
-            "title": "Machine Learning R&D",
-            "tag": "AI & ML",
-            "tech": [
-                "Python",
-                "PyTorch",
-                "TensorFlow",
-                "AI",
-                "Financial Model design"
-            ],
-            "desc": "Specialised machine learning algorithm to explore financial market data for quantitative outcome.",
-            "stats": "10yr+ processed in minutes",
-            "deployment": "Local deployment / AWS",
-            "architecture": "Offline Training Pipeline",
-            "github_link": "#",
-            "live_demo_uri": "#"
-        },
-        {
-            "title": "Quantitative Platform",
-            "tag": "Quantitative Finance",
-            "tech": [
-                "Pandas",
-                "NumPy",
-                "Statistical Analysis"
-            ],
-            "desc": "Market data aggregator normalizing feeds from selected stock market assets, backtesting various strategies and applying different risk management techniques to optimise solid long term investment returns.",
-            "stats": "<1m Processing",
-            "deployment": "Local VPS deployment",
-            "architecture": "Pub/Sub WebSocket Gateway",
-            "github_link": "#",
-            "live_demo_uri": "#"
-        },
-        {
-            "title": "Reconciliation API",
-            "tag": "Compliance",
-            "tech": [
-                "C# .NET",
-                "Azure Functions",
-                "Entity Framework"
-            ],
-            "desc": "Multiple-tenant serverless architecture to handle the migration of systems and reconciliation .",
-            "stats": "Multi-tenant System Migration",
-            "deployment": "Azure Functions (Serverless)",
-            "architecture": "Event-Triggered Microservices",
-            "github_link": "#",
-            "live_demo_uri": "#"
-        }
-    ]
+  "PROJECTS": [
+    {
+      "title": "High-Frequency Screener",
+      "tag": "Algorithmic Trading",
+      "tech": [
+        "Python",
+        "FastAPI",
+        "AWS ECS",
+        "NumPy",
+        "Redis"
+      ],
+      "desc": "Engineered a non-blocking, event-driven screening engine capable of ingesting and normalizing 550+ financial tickers in <4 seconds. Leveraged NumPy vectorization to bypass Python's GIL limitations for heavy arithmetic operations.",
+      "stats": "550+ Tickers / 4s",
+      "deployment": "Heroku",
+      "architecture": "Async Event-Driven Worker System",
+      "github_link": "#",
+      "live_demo_uri": "#"
+    },
+    {
+      "title": "Predictive Alpha R&D",
+      "tag": "Machine Learning",
+      "tech": [
+        "PyTorch",
+        "TensorFlow",
+        "TimescaleDB",
+        "Python"
+      ],
+      "desc": "Architected an offline training pipeline to identify non-linear correlations in historical market data. Optimized data loading (ETL) to process 10+ years of OHLCV data in minutes, enabling rapid hyperparameter tuning.",
+      "stats": "10yr data < 5min",
+      "deployment": "Hybrid (Local GPU + AWS S3)",
+      "architecture": "Batch Processing Pipeline",
+      "github_link": "#",
+      "live_demo_uri": "#"
+    },
+    {
+      "title": "Quant Backtest Engine",
+      "tag": "Quantitative Finance",
+      "tech": [
+        "Pandas",
+        "SciPy",
+        "Docker",
+        "Jupyter"
+      ],
+      "desc": "Built a vectorized backtesting framework to stress-test investment strategies against historical volatility. Implemented Monte Carlo simulations to validate risk-adjusted returns (Sharpe/Sortino ratios) prior to live deployment.",
+      "stats": "Vectorized Execution",
+      "deployment": "Dockerized Microservices",
+      "architecture": "Stateless Calculation Engine",
+      "github_link": "#",
+      "live_demo_uri": "#"
+    },
+    {
+      "title": "Legacy Reconciliation API",
+      "tag": "Fintech Compliance",
+      "tech": [
+        "C# .NET",
+        "Azure Functions",
+        "SQL Server",
+        "Entity Framework"
+      ],
+      "desc": "Designed a multi-tenant, serverless reconciliation engine to validate data integrity during a critical banking system migration. Automated the comparison of millions of transaction rows to ensure audit-compliance.",
+      "stats": "Zero Data Discrepancy",
+      "deployment": "Azure Functions (Serverless)",
+      "architecture": "Event-Triggered Microservices",
+      "github_link": "#",
+      "live_demo_uri": "#"
+    }
+  ]
 }

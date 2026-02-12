@@ -83,8 +83,8 @@ export default function Portfolio() {
       <section className="grid grid-cols-2 md:grid-cols-4 gap-4">
         {[
           { label: "Years Exp", val: "5+", icon: TrendingUp },
-          { label: "APIs Built", val: "10+", icon: Server },
-          { label: "Volume", val: "$1M+", icon: ShieldCheck },
+          { label: "Exchange Integrations", val: "5+", icon: Server },
+          { label: "Volume", val: "$10M+", icon: ShieldCheck },
           { label: "Uptime", val: "99.9%", icon: Terminal },
         ].map((stat, i) => (
           <Card key={i} className="flex flex-col items-center text-center justify-center py-8">
