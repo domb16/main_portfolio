@@ -12,13 +12,19 @@ export default function Footer() {
             <p className="text-slate-400">Available for contractual/full time roles and architectural consulting.</p>
           </div>
           <div className="flex gap-4">
-            <a href="mailto:kyri0s@protonmail.com" className="p-3 bg-fintech-800 rounded-full hover:bg-fintech-700 text-white transition-colors">
+            <a href="mailto:kyri0s@protonmail.com" className="p-3 bg-fintech-800 rounded-full hover:bg-fintech-400 text-white transition-colors"
+              aria-label="Send me an email"
+            >
               <Mail className="w-5 h-5" />
             </a>
-            <a href="https://github.com/domb16" className="p-3 bg-fintech-800 rounded-full hover:bg-fintech-700 text-white transition-colors">
-              <BrandIcon icon={siRefinedgithub} size={20} className="text-slate-400 group-hover:text-fintech-400 transition-colors" />
+            <a href="https://github.com/domb16"
+              aria-label="Visit my Github"
+              className="p-3 bg-fintech-800 rounded-full hover:bg-fintech-400 text-white transition-colors">
+              <BrandIcon icon={siRefinedgithub} size={20} className="text-white" />
             </a>
-            <a href="https://linkedin.com/in/dominik-ky" className="p-3 bg-fintech-800 rounded-full hover:bg-fintech-700 text-white transition-colors">
+            <a href="https://linkedin.com/in/dominik-ky"
+              aria-label="Check me out on Linked In"
+              className="p-3 bg-fintech-800 rounded-full hover:bg-fintech-400 text-white transition-colors">
               <Linkedin className="w-5 h-5" />
             </a>
           </div>

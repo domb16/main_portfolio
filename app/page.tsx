@@ -16,6 +16,7 @@ import data from '@/app/data/personal_exp.json'
 import Footer from './components/footer';
 import { BrandIcon } from './components/icons';
 import { siRefinedgithub } from 'simple-icons';
+import Link from 'next/link';
 
 function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
@@ -25,7 +26,7 @@ const { EXPERIENCE, PROJECTS } = data
 
 const SectionHeader = ({ title, icon: Icon }: { title: string, icon: any }) => (
   <div className="flex items-center gap-3 mb-8 border-b border-fintech-800 pb-4">
-    <Icon className="w-5 h-5 text-fintech-500" />
+    <Icon className="w-5 h-5 text-fintech-400" />
     <h2 className="text-xl font-mono uppercase tracking-wider text-fintech-400">{title}</h2>
   </div>
 );
@@ -66,16 +67,16 @@ export default function Portfolio() {
 
         <p className="text-lg md:text-xl text-slate-400 max-w-2xl leading-relaxed">
           Founder, Architect, and API Specialist. I bridge the gap between complex financial regulations and scalable code.
-          10+ years optimising high throughput systems.
+          5+ years optimising high throughput systems.
         </p>
 
         <div className="flex flex-wrap gap-4 pt-4">
-          <a href="#contact" className="px-6 py-3 bg-fintech-500 text-white font-medium rounded hover:bg-fintech-400 transition-colors">
+          <Link href="#contact" className="px-6 py-3 bg-fintech-400 text-white font-medium rounded hover:bg-fintech-800 transition-colors">
             Contact Me
-          </a>
-          <a href="#projects" className="px-6 py-3 border border-fintech-700 text-slate-300 font-medium rounded hover:border-fintech-500 transition-colors">
+          </Link>
+          <Link href="#projects" className="px-6 py-3 border border-fintech-700 text-slate-300 font-medium rounded hover:border-fintech-500 transition-colors">
             View Architecture
-          </a>
+          </Link>
         </div>
       </section>
 
@@ -88,7 +89,7 @@ export default function Portfolio() {
           { label: "Uptime", val: "99.9%", icon: Terminal },
         ].map((stat, i) => (
           <Card key={i} className="flex flex-col items-center text-center justify-center py-8">
-            <stat.icon className="w-6 h-6 text-fintech-500 mb-2" />
+            <stat.icon className="w-6 h-6 text-fintech-400 mb-2" />
             <span className="text-2xl font-bold text-white font-mono">{stat.val}</span>
             <span className="text-xs text-slate-500 uppercase tracking-widest mt-1">{stat.label}</span>
           </Card>
@@ -109,7 +110,7 @@ export default function Portfolio() {
                 </h3>
                 <span className="font-mono text-sm text-slate-500">{job.period}</span>
               </div>
-              <div className="text-fintech-500 font-mono text-sm mb-2">{job.company}</div>
+              <div className="text-fintech-400 font-mono text-sm mb-2">{job.company}</div>
               <p className="text-slate-400 leading-relaxed max-w-3xl">
                 {job.desc}
               </p>
@@ -130,7 +131,7 @@ export default function Portfolio() {
               <Card key={i} className={`relative overflow-hidden group transition-all duration-300 ${isExpanded ? 'md:col-span-2' : ''}`}>
                 <div className="flex justify-between items-start mb-4">
                   <div className="flex items-center gap-2">
-                    <Terminal className="w-4 h-4 text-fintech-500" />
+                    <Terminal className="w-4 h-4 text-fintech-400" />
                     <h3 className="text-lg font-bold text-white">{project.title}</h3>
                   </div>
                   <Badge>{project.stats}</Badge>
@@ -159,14 +160,15 @@ export default function Portfolio() {
                 {isExpanded && (
                   <div className="mt-6 pt-6 border-t border-fintech-700 animate-in fade-in slide-in-from-top-2 duration-300">
                     <div className="bg-black/30 p-4 rounded font-mono text-sm text-slate-300">
-                      <p className="text-fintech-500 mb-2">// Technical Implementation Details</p>
+                      <p className="text-fintech-400 mb-2">// Technical Implementation Details</p>
                       <p>{`> Architecture: ${project.architecture}`}</p>
                       <p>{`> Deployment: ${project.deployment}`}</p>
                       {/* <p>{`> Latency target: `}</p> */}
                       <div className="mt-4 flex gap-4">
-                        {project.github_link !== '#' ? <a href={project.github_link} className="flex items-center gap-2 text-white hover:underline"><BrandIcon icon={siRefinedgithub} size={20} className="w-4 h-4" /> Repo (Private)</a> : <></>}
+                        {project.github_link !== '#' ? <a href={project.github_link}
+                          aria-label="Visit my Github Profile" className="flex items-center gap-2 text-white hover:underline"><BrandIcon icon={siRefinedgithub} size={20} className="w-4 h-4" /> Repo (Private)</a> : <></>}
                         {project.live_demo_uri !== "#" ?
-                          <a href={project.live_demo_uri} className="flex items-center gap-2 text-white hover:underline"><ExternalLink className="w-4 h-4" /> Live Demo</a> : <></>}
+                          <a href={project.live_demo_uri} aria-label='Visit the demo' className="flex items-center gap-2 text-white hover:underline"><ExternalLink className="w-4 h-4" /> Live Demo</a> : <></>}
                       </div>
                     </div>
                   </div>

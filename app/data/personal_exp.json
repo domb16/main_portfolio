@@ -1,30 +1,30 @@
 {
-    "EXPERIENCE": [
-        {
-            "role": "Independent Quant Researcher",
-            "company": "Proprietary Trading Desk",
-            "period": "2020 - 2024",
-            "desc": "Captured consistent market alpha by designing a proprietary trading strategy and the high-performance infrastructure to run it. Optimized the core screening loop from 24s to <4s via concurrency and vectorisation (AsyncIO + Semaphore + NumPy), enabling the system to give accurate data without wassting precious seconds."
-        },
-        {
-            "role": "Founder & CTO",
-            "company": "Collective Hub Holdings",
-            "period": "2023 - 2025",
-            "desc": "Bootstrapped a production-ready React/Python platform to Beta as a solo engineer in under 12 months, effectively saving ~$150k in development overhead. Preserved ~42% of residual capital by executing a disciplined, solvent wind-down immediately upon invalidating the business thesis."
-        },
-        {
-            "role": "Core Engineer (Python + React)",
-            "company": "Tealstreet Ltd",
-            "period": "2022 - 2023",
-            "desc": "Architected a unified 'Translation Layer' to normalize disparate exchange protocols into a single internal schema. Diagnosed critical vendor-side API gaps (missing endpoints/data) and liaised directly with partner engineering teams to implement protocol-level workarounds, ensuring 100% data continuity."
-        },
-        {
-            "role": "Software Engineer (.NET/Python)",
-            "company": "Octopus Investments",
-            "period": "2018 - 2021",
-            "desc": "Mitigated data-loss liability to 0% during a critical legacy-to-cloud transition. Accelerated audit readiness from 7 days to instant availability via automated dashboards, and digitized complex legal workflows to unlock a digitalised Will writing stream previously constrained by manual processing capacity."
-        }
-    ],
+  "EXPERIENCE": [
+    {
+      "role": "Founder & CTO",
+      "company": "Collective Hub Holdings",
+      "period": "2023 - 2025",
+      "desc": "Bootstrapped a production-ready React/Python platform to Beta as a solo engineer in under 12 months, effectively saving ~$150k in development overhead. Preserved ~42% of residual capital by executing a disciplined, solvent wind-down immediately upon invalidating the business thesis."
+    },
+    {
+      "role": "Core Engineer (Python + React)",
+      "company": "Tealstreet Ltd",
+      "period": "2022 - 2023",
+      "desc": "Architected a unified 'Translation Layer' to normalize disparate exchange protocols into a single internal schema. Diagnosed critical vendor-side API gaps (missing endpoints/data) and liaised directly with partner engineering teams to implement protocol-level workarounds, ensuring 100% data continuity."
+    },
+    {
+      "role": "Independent Quant Researcher",
+      "company": "Proprietary Trading Desk",
+      "period": "2020 - 2024",
+      "desc": "Captured consistent market alpha by designing a proprietary trading strategy and the high-performance infrastructure to run it. Optimized the core screening loop from 24s to <4s via concurrency and vectorisation (AsyncIO + Semaphore + NumPy), enabling the system to give accurate data without wassting precious seconds."
+    },
+    {
+      "role": "Software Engineer (.NET/Python)",
+      "company": "Octopus Investments",
+      "period": "2018 - 2021",
+      "desc": "Mitigated data-loss liability to 0% during a critical legacy-to-cloud transition. Accelerated audit readiness from 7 days to instant availability via automated dashboards, and digitized complex legal workflows to unlock a digitalised Will writing stream previously constrained by manual processing capacity."
+    }
+  ],
   "PROJECTS": [
     {
       "title": "High-Frequency Screener",

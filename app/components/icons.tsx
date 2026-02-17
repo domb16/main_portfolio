@@ -4,7 +4,7 @@ type IconProps = {
     icon: SimpleIcon;
     size?: number;
     className?: string;
-    color?: string; // Optional: Override default brand color
+    color?: string;
 };
 
 export const BrandIcon = ({ icon, size = 24, className, color }: IconProps) => {
@@ -15,6 +15,7 @@ export const BrandIcon = ({ icon, size = 24, className, color }: IconProps) => {
             width={size}
             height={size}
             className={className}
+            aria-label='Icon'
             fill={color || 'currentColor'}
             xmlns="http://www.w3.org/2000/svg"
         >
