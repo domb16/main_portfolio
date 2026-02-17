@@ -163,7 +163,6 @@ export default function Portfolio() {
                       <p className="text-fintech-400 mb-2">// Technical Implementation Details</p>
                       <p>{`> Architecture: ${project.architecture}`}</p>
                       <p>{`> Deployment: ${project.deployment}`}</p>
-                      {/* <p>{`> Latency target: `}</p> */}
                       <div className="mt-4 flex gap-4">
                         {project.github_link !== '#' ? <a href={project.github_link}
                           aria-label="Visit my Github Profile" className="flex items-center gap-2 text-white hover:underline"><BrandIcon icon={siRefinedgithub} size={20} className="w-4 h-4" /> Repo (Private)</a> : <></>}

@@ -22,12 +22,12 @@ export const metadata: Metadata = {
   keywords: ["Fintech", "Quant Trading", "System Architecture", "API Design", "Python", "Pandas", "NumPy"],
   authors: [{ name: "Dom B." }],
   creator: "Dom B",
-  
+
   openGraph: {
     type: "website",
     locale: "en_GB",
     url: "https://kyrenn.com",
-    title: "J. Doe | Fintech Systems Architect",
+    title: "Dom B. | Systems Architect",
     description: "Building the financial infrastructure of tomorrow. Specialized in low-latency APIs and risk engines.",
     siteName: "Dom B. Portfolio",
     images: [
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
       },
     ],
   },
-  
+
   twitter: {
     card: "summary_large_image",
     title: "Dom B. | Architect",
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     creator: "@itsKyrenn_",
     images: ["/android-chrome-192x192.png"],
   },
-  
+
   robots: {
     index: true,
     follow: true,

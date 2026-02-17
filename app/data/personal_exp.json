@@ -40,7 +40,7 @@
       "stats": "550+ Tickers / 4s",
       "deployment": "Heroku",
       "architecture": "Async Event-Driven Worker System",
-      "github_link": "#",
+      "github_link": "/",
       "live_demo_uri": "#"
     },
     {
@@ -56,7 +56,7 @@
       "stats": "10yr data < 5min",
       "deployment": "Hybrid (Local GPU + AWS S3)",
       "architecture": "Batch Processing Pipeline",
-      "github_link": "#",
+      "github_link": "/",
       "live_demo_uri": "#"
     },
     {
@@ -72,7 +72,7 @@
       "stats": "Vectorized Execution",
       "deployment": "Dockerized Microservices",
       "architecture": "Stateless Calculation Engine",
-      "github_link": "#",
+      "github_link": "/",
       "live_demo_uri": "#"
     },
     {
@@ -88,7 +88,7 @@
       "stats": "Zero Data Discrepancy",
       "deployment": "Azure Functions (Serverless)",
       "architecture": "Event-Triggered Microservices",
-      "github_link": "#",
+      "github_link": "/",
       "live_demo_uri": "#"
     }
   ]
